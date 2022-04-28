@@ -12,14 +12,21 @@ import cftime
 import cartopy.crs as ccrs
 import cartopy as cy
 import matplotlib.pyplot as plt
+
 import xesmf as xe
 from glob import glob
 import pandas as pd
 import numpy as np
+
 from cmcrameri import cm
 from scipy.stats import linregress
 import dask.array as da
-import geocat.comp as gc
 
+import geocat.comp as gc
+from datetime import datetime, timedelta
+
+import h5py
+
+from scipy.optimize import curve_fit
 
 import functions as fct
